@@ -1,66 +1,61 @@
 /* font imports */
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&family=Roboto+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700;800&family=Space+Mono:wght@700&display=swap');
 
 :root {
   /* colors ––––––––––– */
-  --dark-neutral: #2f2f2f;
+  --dark-neutral: #282828;
   --light-neutral: #fff;
-  --primary: #88ECD8;
-  --darker-primary: #5eb7a5;
-  --darkest-primary: #2b7d6c;
+  --primary: #7ed321;
+  --darker-primary: #68B415;
+  --darkest-primary: #6B775E;
   /* fonts ––––––––––– */
   --heading-font: 'Open Sans', sans-serif;
-  --body-font: 'Roboto Mono', monospace;
+  --sub-font: 'Space Mono', monospace;
+  --body-font: 'Open Sans', sans-serif;
+  --heading-font-weight: 800;
+  --sub-font-weight: 700;
+  --body-font-weight: 400;
 }
 
 body {
-  background-color: var(--primary);
-  color: var(--dark-neutral);
+  background-color: var(--dark-neutral);
+  color: var(--light-neutral);
   font-family: var(--body-font);
+  font-size: 18px;
 }
 
-.wrapper {
-  margin: 80px auto;
-  max-width: 900px;
-  padding-left: 100px; /* compensates for off-centeredness created by element positioning */
-  position: relative;
-}
-
-.h1,
-.button {
-  font-family: var(--heading-font);
+.wrap {
+  margin: 2em 1em;
+  max-width: 600px;
 }
 
 .h1 {
-  font-size: 44px;
-  padding: 5px 10px;
-  z-index: 2;
-  margin-bottom: 20px;
-  margin-left: -40px;
-  margin-right: -20px;
+  color: var(--primary);
+  font-family: var(--heading-font);
+  font-size: 58px;
+  font-weight: var(--heading-font-weight);
+  text-transform: lowercase;
+}
+
+.h2 {
+  font-size: 18px;
+  font-weight: var(--body-font-weight);
+  text-transform: lowercase;
+}
+
+.h3 {
+  color: var(--darkest-primary);
+  font-family: var(--sub-font);
+  font-size: 16px;
+  font-weight: var(--sub-font-weight);
+  text-transform: uppercase;
 }
 
 .anchor {
-  color: var(--darkest-primary);
-}
-
-.button {
-  align-items: center;
-  background-color: var(--darker-primary);
-  border: 3px solid var(--dark-neutral);
-  box-shadow: inset -6px 6px 0 0 var(--primary),
-              -8px 8px 0 0 var(--darker-primary);
-  color: var(--dark-neutral);
-  display: flex;
-  justify-content: space-between;
-  padding: 10px 16px;
-  margin-bottom: 20px;
-  text-transform: uppercase;
-  text-decoration: none;
-}
-
-.button:hover {
-  box-shadow: unset;
+  /*color: var(--primary);*/
+  /*font-size: 16px;*/
+  color: yellow;
+  /*font-weight: var(--sub-font-weight);*/
 }
 
 .icon {
